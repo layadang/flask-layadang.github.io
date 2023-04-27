@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>about me!</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <link rel="icon" href="images/frog.png">
+  <script src="index.js"></script>
+
+</head>
+
+<body onload="toggleLanguage('en')">
+
+  {% include 'header.html' %}
+
+  <div class="aboutmain">
+    <img src=images/me.webp title="my animal crossing character!">
+    <div class="aboutmetext">
+      
+      <p class="language">
+        <a href="#" onclick="toggleLanguage('en')"> 🇺🇸 en</a> | 
+        <a href="#" onclick="toggleLanguage('vi')">🇻🇳 vi</a>
+      </p>
+
+      <p id="english" class="english" style="font-size: 15px;">
+        hello! thanks for stopping by <3 <br> <br>
+          i'm laya, an undergrad at boston university. if all 
+          goes well, i will graduate with a double major
+          in economics and computer science in may 2025. <br><br>
+          this website was made entirely from scratch, bringing 
+          together my love for data science, webdev, and
+          ui/ux design. <br> <br>
+          i hope u enjoy this space as much as i did building it!
+      </p>
+
+      <p id="vnmese" class="vnmese" style="font-size: 15px;">
+        chào bạn! cảm ơn bạn đã ghé qua trang web của mình <3 <br> <br>
+
+        mình tên là laya (tiếng viêt tên phương), sinh viên tại boston university. 
+        hiện tại, mình đang học ngành kinh tế và khoa học máy tính, và sẽ tốt nghiệp
+        vào tháng 5 năm 2025. <br><br>
+        
+        trang web này xây dựng hoàn toàn từ đầu, kết hợp những kỹ năng khoa học dữ liệu, 
+        phát triển web, và thiết kế ui/ux của mình. <br> <br>
+        
+        bạn cứ thoải máy đi loanh quanh và khám phá website này nhé!
+      </p>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>

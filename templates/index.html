@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>laya likes graphs</title>
+  <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='styles/index.css')}}">
+  <link rel="icon" href="{{url_for('static', filename='images/frog.png')}}">
+  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="{{url_for('static', filename='index.js')}}"></script>
+
+</head>
+<body>
+
+{% include 'header.html' %}
+
+  <div class="maincontent">
+    <a href="/content/spotify" class="block">
+      <p>My Spotify Stats (not finished) </p>
+      <img src="{{url_for('static', filename='graphs/spotifydance-yearrose.webp')}}">
+    </a>
+
+    <a href="/content/interactive-bluebikes" class="block">
+      <p>[INTERACTIVE!] BlueBike Stations and Boston District Type </p>
+      <img src="{{url_for('static', filename='graphs/static-bluebikesboston.webp')}}">
+    </a>
+
+    <a href="content/allston-mv-accidents" class="block">
+      <p>Mapping Allston Motor Vechicle Accidents</p>
+      <img src="{{url_for('static', filename='graphs/tmap-allston-map.webp')}}">
+    </a>
+
+    <a href="content/nycflights13" class="block">
+      <p>The nycflights13 Data Sets (CRAN Package) </p>
+      <img src="{{url_for('static', filename='graphs/airports-usa.webp')}}">
+    </a>
+
+    <a href="/" class="block">
+      <p>Allston Streetview (not finished)</p>
+      <img src="{{url_for('static', filename='graphs/allston-streetview.webp')}}">
+    </a>
+
+    <a href="/" class="block">
+      <p>US Map, scaled nicely (not finished)</p>
+      <img src="{{url_for('static', filename='graphs/us-maps.webp')}}">
+    </a>
+  </div>
+
+</body>
+
+</html>
